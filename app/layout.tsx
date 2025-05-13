@@ -6,10 +6,11 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Hyssop Labs - AI Development and Implementation",
-  description:
-    "Hyssop Labs is a consulting & development agency that helps SMBs, agencies, and startups implement AI to generate new revenue, increase profit margins, and save significant time.",
-    generator: 'v0.dev'
+  title: "Hyssop Labs - Automation and Bespoke Software",
+  description: "Hyssop Labs helps SMBs, agencies, and startups generate new revenue, automate tedious processes, and save significant time with Automation and AI.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({

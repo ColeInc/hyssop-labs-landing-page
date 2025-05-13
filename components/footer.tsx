@@ -18,8 +18,8 @@ export default function Footer() {
               Hyssop Labs
             </Link>
             <p className="mt-4 max-w-md text-sm text-muted-foreground !text-gray-600">
-              Hyssop Labs is a consulting & development agency that helps SMBs, agencies, and startups implement AI to
-              generate new revenue, increase profit margins, and save significant time.
+              Hyssop Labs is a development agency that helps SMBs, agencies, and startups implement AI to
+              generate new revenue, increase profit margins, and save you significant time.
             </p>
             <div className="mt-6 flex space-x-4">
               <div className="space-y-4">

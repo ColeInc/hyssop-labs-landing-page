@@ -8,25 +8,28 @@ export default function ProcessSteps() {
       icon: Search,
       title: "Discovery",
       description:
-        "A 30-minute discovery call to identify exactly what your pain points are, and how we can help use AI and automations to solve them. We engage in a comprehensive discussion to understand your project goals, user needs, and unique requirements.",
+        "A 30-minute discovery call to learn about your specific needs and pain points to understand exactly what you need to get done.",
     },
     {
       icon: FileText,
       title: "Proposal",
       description:
-        "Taking what we've learned in the discovery call, we'll form a comprehensive plan on the best solution we can offer you. We'll come to an agreement on a well-defined scope for the project and create a detailed specification document that will guide our development.",
+        "Based on insights from the discovery call, we'll define a clear project scope and craft a detailed specification to guide development toward the best possible solution.",
+
     },
     {
       icon: CalendarDays,
       title: "Build",
       description:
-        "We design and build your app with only the features you need, focusing on simplicity and getting things done. Our skilled development team kicks off the rapid and efficient development process following best practices.",
+        "We design and build your app with just the essential features, focusing on simplicity and speed, while our expert team follows best practices to deliver rapid, efficient development.",
     },
     {
       icon: Rocket,
       title: "Deliver / Launch",
       description:
-        "We deploy your product and provide training so that you have full confidence in running it on your own. Timeliness is key. We pride ourselves on on-time delivery, ensuring your fully functional outcome is ready to go.",
+        "We deliver your product on time, provide hands-on training, and ensure you're fully equipped to run it with confidence from day one.",
+
+
     },
   ]
 
@@ -46,7 +49,7 @@ export default function ProcessSteps() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <CardDescription className="text-sm text-foreground/80">{step.description}</CardDescription>
+            <CardDescription className="text-sm text-foreground/80 text-gray-600">{step.description}</CardDescription>
           </CardContent>
         </Card>
       ))}

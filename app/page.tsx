@@ -14,16 +14,17 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Navbar />
 
+      {/* <div className="mx-auto max-w-6xl"> */}
+
+
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      <section className="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-            AI Development and Implementation for SMBs, Agencies, and Startups
+            AI Development and Automation for SMBs, Agencies, and Startups
           </h1>
-          <p className="mt-6 max-w-3xl text-lg text-muted-foreground text-gray-600">
-            Hyssop Labs is a consulting & development agency that helps SMBs, agencies, and startups implement AI to
-            generate new revenue, increase profit margins, save significant time, reduce churn, etc. — basically
-            whatever you're trying to accomplish.
+          <p className="mt-6 max-w-3xl text-lg text-muted-foreground text-gray-700">
+            Hyssop Labs helps SMBs, agencies, and startups generate new revenue, automate tedious processes, and save significant time with Automation and AI.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Button size="lg" asChild>
@@ -40,7 +41,7 @@ export default function Home() {
         </div>
 
         {/* Hero Video */}
-        <div className="mt-12 overflow-hidden rounded-lg border bg-background shadow-xl">
+        <div className="mt-12 overflow-hidden rounded-lg border bg-background shadow-xl max-w-6xl">
           <div className="relative aspect-video w-full">
             <div className="absolute inset-0 flex items-center justify-center bg-black/5">
               <Button size="lg" variant="outline" className="rounded-full bg-white/90 p-8">
@@ -76,12 +77,12 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 md:py-24">
+      <section id="services" className="py-16 md:py-24 mx-auto max-w-6xl">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">What We Offer</h2>
             <p className="mt-4 text-sm text-gray-800 text-muted-foreground">
-              Comprehensive AI solutions tailored to your business needs
+              Tailored solutions for businesses who want results without excessive features or costs.
             </p>
           </div>
           <ServiceCards />
@@ -112,6 +113,9 @@ export default function Home() {
           <BookCallWidget />
         </div>
       </section>
+
+      {/* </div> */}
+
 
       <Footer />
     </div>

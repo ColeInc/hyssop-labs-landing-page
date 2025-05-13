@@ -10,9 +10,9 @@ export default function ServiceCards() {
       title: "AI Automation",
       description: "Eliminate repetitive tasks, uncover insights, and create personalized experiences.",
       points: [
-        "Eliminate soul-crushing repetitive tasks that drain your team's time and energy",
-        "Uncover hidden insights in your data that could transform your business decisions",
-        "Create personalized customer experiences that build loyalty while you sleep",
+        "Eliminate repetitive, low-value tasks that drain time and morale so your team can focus on work that actually moves your business forward.",
+        "Personalised customer experiences and customer support 24/7 without needing to hire more resources.",
+        "Automate lead generation processes so you’re constantly attracting, qualifying, and nurturing prospects—even while your team is offline."
       ],
     },
     {
@@ -22,7 +22,7 @@ export default function ServiceCards() {
       points: [
         "Get exactly what your business needs without paying for bloated features you'll never use",
         "Stop forcing your unique processes into rigid off-the-shelf software that wasn't built for you",
-        "Scale affordably without the per-user costs that punish your growth",
+        "From lean MVPs to full-featured systems, we create custom apps tailored to your goals and your budget."
       ],
     },
   ]
@@ -41,13 +41,13 @@ export default function ServiceCards() {
             <h3 className="text-2xl font-bold">{service.title}</h3>
 
             {/* Short description */}
-            <p className="text-lg text-slate-600">{service.description}</p>
+            <p className="text-lg text-slate-600 leading-tight">{service.description}</p>
 
             {/* Bullet points */}
             <ul className="space-y-3 pt-2">
               {service.points.map((point, pointIndex) => (
-                <li key={pointIndex} className="flex items-start gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
+                <li key={pointIndex} className="flex items-start gap-3 leading-tight">
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary "></span>
                   <span className="text-slate-700">{point}</span>
                 </li>
               ))}
