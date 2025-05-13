@@ -1,0 +1,70 @@
+import Link from "next/link"
+import { ArrowRight, Bot, Code } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+
+export default function ServiceCards() {
+  const services = [
+    {
+      icon: Bot,
+      title: "AI Automation",
+      description: "Eliminate repetitive tasks, uncover insights, and create personalized experiences.",
+      points: [
+        "Eliminate soul-crushing repetitive tasks that drain your team's time and energy",
+        "Uncover hidden insights in your data that could transform your business decisions",
+        "Create personalized customer experiences that build loyalty while you sleep",
+      ],
+    },
+    {
+      icon: Code,
+      title: "Bespoke App Solutions",
+      description: "Custom software built for your specific needs without unnecessary features or costs.",
+      points: [
+        "Get exactly what your business needs without paying for bloated features you'll never use",
+        "Stop forcing your unique processes into rigid off-the-shelf software that wasn't built for you",
+        "Scale affordably without the per-user costs that punish your growth",
+      ],
+    },
+  ]
+
+  return (
+    <div className="rounded-2xl border bg-white p-8 shadow-sm">
+      <div className="grid gap-12 md:grid-cols-2 md:gap-8">
+        {services.map((service, index) => (
+          <div key={index} className="space-y-6">
+            {/* Icon */}
+            <div className="h-16 w-16 rounded-lg bg-primary/10 p-4">
+              <service.icon className="h-8 w-8 text-primary" />
+            </div>
+
+            {/* Title */}
+            <h3 className="text-2xl font-bold">{service.title}</h3>
+
+            {/* Short description */}
+            <p className="text-lg text-slate-600">{service.description}</p>
+
+            {/* Bullet points */}
+            <ul className="space-y-3 pt-2">
+              {service.points.map((point, pointIndex) => (
+                <li key={pointIndex} className="flex items-start gap-3">
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
+                  <span className="text-slate-700">{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      {/* CTA Button */}
+      <div className="mt-10 flex justify-end">
+        <Button asChild className="group">
+          <Link href="#book-call">
+            Schedule a Call
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </Button>
+      </div>
+    </div>
+  )
+}
