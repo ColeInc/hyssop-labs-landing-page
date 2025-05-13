@@ -23,25 +23,25 @@ export default function Navbar() {
         <nav className="hidden md:flex md:items-center md:space-x-6">
           <Link
             href="#services"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground !text-gray-900"
           >
             Services
           </Link>
-          <Link
+          {/* <Link
             href="#how-it-works"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             How It Works
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             href="#testimonials"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             Case Studies
-          </Link>
+          </Link> */}
           <Link
             href="#contact"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground !text-gray-900"
           >
             Contact
           </Link>

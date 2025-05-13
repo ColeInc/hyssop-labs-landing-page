@@ -8,8 +8,6 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ProcessSteps from "@/components/process-steps"
 import ServiceCards from "@/components/service-cards"
-import Testimonials from "@/components/testimonials"
-import ClientLogos from "@/components/client-logos"
 
 export default function Home() {
   return (
@@ -22,7 +20,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
             AI Development and Implementation for SMBs, Agencies, and Startups
           </h1>
-          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-3xl text-lg text-muted-foreground text-gray-600">
             Hyssop Labs is a consulting & development agency that helps SMBs, agencies, and startups implement AI to
             generate new revenue, increase profit margins, save significant time, reduce churn, etc. — basically
             whatever you're trying to accomplish.
@@ -30,14 +28,14 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Button size="lg" asChild>
               <Link href="#book-call">
-                Book a Call <ChevronRight className="ml-2 h-4 w-4" />
+                Book a Call<ChevronRight className="h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            {/* <Button size="lg" variant="outline" asChild>
               <Link href="#how-it-works">
                 See How It Works <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
 
@@ -62,14 +60,14 @@ export default function Home() {
       </section>
 
       {/* Client Logos */}
-      <ClientLogos />
+      {/* <ClientLogos /> */}
 
       {/* How It Works / Process Section */}
       <section id="how-it-works" className="bg-slate-50 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-sm text-gray-800 text-muted-foreground">
               Our streamlined process ensures efficient delivery and exceptional results
             </p>
           </div>
@@ -82,7 +80,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">What We Offer</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-sm text-gray-800 text-muted-foreground">
               Comprehensive AI solutions tailored to your business needs
             </p>
           </div>
@@ -91,24 +89,25 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="bg-slate-50 py-16 md:py-24">
+      {/* <section id="testimonials" className="bg-slate-50 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">What Our Clients Say</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Real results from businesses just like yours</p>
+            <p className="mt-4 text-sm text-gray-800 text-muted-foreground">Real results from businesses just like yours</p>
           </div>
           <Testimonials />
         </div>
-      </section>
+      </section> */}
 
       {/* Book a Call Section */}
       <section id="book-call" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
+          <div className="mb-0 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Schedule a Demo</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Book a call to discuss how we can help implement AI solutions for your business
+            <p className="mt-4 text-lg text-muted-foreground text-gray-800">
+              Book a call to discuss how we can help implement AI solutions for your business.
             </p>
+            <p className="pt-3 font-bold max-w-[450px] mx-auto text-[#6c48fb]">When booking your call, please provide as much context and detail as possible!</p>
           </div>
           <BookCallWidget />
         </div>

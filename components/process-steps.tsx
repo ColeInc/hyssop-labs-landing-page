@@ -12,7 +12,7 @@ export default function ProcessSteps() {
     },
     {
       icon: FileText,
-      title: "Proposal / Scope / Plan",
+      title: "Proposal",
       description:
         "Taking what we've learned in the discovery call, we'll form a comprehensive plan on the best solution we can offer you. We'll come to an agreement on a well-defined scope for the project and create a detailed specification document that will guide our development.",
     },
@@ -39,9 +39,9 @@ export default function ProcessSteps() {
               <step.icon className="h-6 w-6 text-primary" />
             </div>
             <CardTitle className="flex items-center gap-2">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
+              {/* <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
                 {index + 1}
-              </span>
+              </span> */}
               {step.title}
             </CardTitle>
           </CardHeader>
