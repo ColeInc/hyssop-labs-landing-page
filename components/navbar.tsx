@@ -40,7 +40,7 @@ export default function Navbar() {
             Case Studies
           </Link> */}
           <Link
-            href="#contact"
+            href="#book-call"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground !text-gray-900"
           >
             Contact
