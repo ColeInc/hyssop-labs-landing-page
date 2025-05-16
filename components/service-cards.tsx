@@ -6,16 +6,6 @@ import { Button } from "@/components/ui/button"
 export default function ServiceCards() {
   const services = [
     {
-      icon: Bot,
-      title: "AI Automation",
-      description: "Eliminate repetitive tasks, uncover insights, and create personalized experiences.",
-      points: [
-        "Eliminate repetitive, low-value tasks that drain time and morale so your team can focus on work that actually moves your business forward.",
-        "Personalised customer experiences and customer support 24/7 without needing to hire more resources.",
-        "Automate lead generation processes so you’re constantly attracting, qualifying, and nurturing prospects—even while your team is offline."
-      ],
-    },
-    {
       icon: Code,
       title: "Bespoke App Solutions",
       description: "Custom software built for your specific needs without unnecessary features or costs.",
@@ -23,6 +13,15 @@ export default function ServiceCards() {
         "Get exactly what your business needs without paying for bloated features you'll never use",
         "Stop forcing your unique processes into rigid off-the-shelf software that wasn't built for you",
         "From lean MVPs to full-featured systems, we create custom apps tailored to your goals and your budget."
+      ],
+    },
+    {
+      icon: Bot,
+      title: "AI Automation",
+      description: "Eliminate repetitive tasks, uncover insights, and create personalized experiences.",
+      points: [
+        "Eliminate repetitive, low-value tasks that drain time and morale so your team can focus on work that actually moves your business forward.",
+        "Purpose built automations for your unique business processes. Automating anything from automating lead generation processes to tedious document processing."
       ],
     },
   ]
