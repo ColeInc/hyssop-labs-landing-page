@@ -43,7 +43,7 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
             <p className="mt-4 text-sm text-gray-800 text-muted-foreground">
-              Our streamlined process ensures efficient delivery and exceptional results
+              A simple, streamlined process to provide your business with exactly what you need, and nothing extra.
             </p>
           </div>
           <ProcessSteps />
