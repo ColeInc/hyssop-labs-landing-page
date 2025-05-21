@@ -6,8 +6,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Hyssop Labs - Automation and Bespoke Software",
-  description: "Hyssop Labs helps SMBs, agencies, and startups generate new revenue, automate tedious processes, and save significant time with Automation and AI.",
+  title: "Hyssop Labs - AI Automation and Automation",
+  description: "Hyssop Labs helps SMBs, agencies, and startups generate new revenue, automate tedious processes, and save amounts of significant time with Automation and AI.",
   icons: {
     icon: '/favicon.ico',
   },

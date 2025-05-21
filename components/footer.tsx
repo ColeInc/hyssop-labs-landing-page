@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button"
 export default function Footer() {
   const TWITTER_URL = 'https://twitter.com/cole_mccon'
   const GITHUB_URL = 'https://github.com/coleinc'
-  const LINKEDIN_URL = 'https://www.linkedin.com/in/cole-mcconnell/'
+  // const LINKEDIN_URL = 'https://www.linkedin.com/in/cole-mcconnell/'
+  const LINKEDIN_URL = 'https://www.linkedin.com/company/hyssop-labs'
   const EMAIL_URL = 'mailto:hello@hyssoplabs.com'
 
   return (
